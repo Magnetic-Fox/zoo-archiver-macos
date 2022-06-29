@@ -50,7 +50,7 @@ As it is difficult to know if Your data contain such blocks, the best You can do
 
 Yup, it's quite uncomfortable, I think. You have to add directories manually. I think it's due to make path traversal attacks harder or even impossible.
 Combining this with some script making list of files You wish to add to the archive would be great solution. As far as I know, it is possible to provide as many file as You want in command prompt.
-If I'm not right, You may also add files partially to make full archive.
+If I'm wrong, You can always add files partially to make whole archive.
 
 ## Disclaimer
 I did my best to test these codes and provide usable software without errors with hope it will be useful for somebody (for example, for historical or sentimental reasons).
