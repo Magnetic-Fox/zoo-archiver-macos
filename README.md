@@ -32,7 +32,7 @@ I have not been able to test it properly under Windows, so I'd be happy to see Y
 
 However,
 - if You use Linux, then consider using official package, which can be found [here](https://packages.debian.org/stretch/zoo) or in Your package manager
-- if You use Windows supporting 16-bit programs (for example 32-bit Windows XP), You can find old MS-DOS distributions on the internet which works pretty good (sorry, I don't remember where, because I searched for them long time ago) 
+- if You use Windows supporting 16-bit programs (for example 32-bit Windows XP), You can find old MS-DOS distributions on the internet which works pretty good (sorry, I can't remember where, because I searched for them long time ago) 
 
 It is far better to use officially supported versions rather than using codes provided here.
 
