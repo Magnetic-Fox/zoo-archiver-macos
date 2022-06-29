@@ -72,14 +72,21 @@ The software was originally written by Rahul Dhesi between 1986 and 1991 year. L
 I'd love to provide copyright list here (found in Debian-specific files) to respect those people and express my gratitude for making this software work - I really appreciate and like it.
 
 Author of original software:
+
 &copy; 1986-1991 Rahul Dhesi
 
 Later maintainers:
+
 &copy; 1997-1998 James Troup
+
 &copy; 1998, 2000, 2001, 2004 Petr Cech
+
 &copy; 2004 Niklas Vainio
+
 &copy; 2005-2008 Jose Carlos Medeiros
+
 &copy; 2011-2012 Jari Aalto
 
 Me, doing simple corrections to make it compile under macOS:
+
 &copy; 2021-2022 Bartłomiej "Magnetic-Fox" Węgrzyn
