@@ -1,0 +1,22 @@
+Source: zoo
+Section: utils
+Priority: optional
+Build-Depends: xutils-dev, debhelper (>= 9)
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Standards-Version: 3.9.6
+Vcs-Browser: http://git.debian.org/?p=collab-maint/zoo.git
+Vcs-Git: git://git.debian.org/git/collab-maint/zoo.git
+Homepage: http://www.ibiblio.org/pub/packages/ccic/software/unix/utils/
+
+Package: zoo
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: manipulate zoo archives
+ Zoo is used to create and maintain collections of files in compressed
+ form.  It uses a Lempel-Ziv compression algorithm that gives space
+ savings in the range of 20% to 80% depending on the type of file data.
+ Zoo can store and selectively extract multiple generations of the same
+ file.
+ .
+ This package exists for its historical value. If you are looking for
+ a compression tool for serious use, check tar and gzip.

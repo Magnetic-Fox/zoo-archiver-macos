@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS	= hardening=+all
+export DEB_CFLAGS_MAINT_APPEND	= -Wall -pedantic
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+
+TARGET = linux
+BITS   = $(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS)
+
+ifeq ($(BITS),64)
+    TARGET = linux64
+endif
+
+override_dh_auto_build:
+	cp --archive makefile makefile.orig
+	makedepend
+	$(MAKE) CFLAGS="$(CFLAGS) $(CPPFLAGS)" LDFLAGS="$(LDFLAGS)" $(TARGET)
+	# Restore original; changed by makedepend
+	mv makefile.orig makefile
+
+override_dh_auto_install:
+	# Skip. See debian/install
+
+%:
+	dh $@
+
+# End of file
