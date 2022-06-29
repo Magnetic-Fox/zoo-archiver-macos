@@ -112,6 +112,13 @@ int make_tree
 
 /* delete */
 
+// Magnetic-Fox: I've added this simple line below to fix troubles with
+//               compiling under macOS. This makes it use ALWAYS code
+//               from the first declaration in IFDEF section. If You encounter
+//               any problems during compilation process, simply delete
+//               this line below:
+#define NEED_MEMMOVE
+
 #ifdef NEED_MEMMOVE
 # define MOVE_LEFT move_left
   void move_left();
