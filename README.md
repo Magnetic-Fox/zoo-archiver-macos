@@ -49,7 +49,7 @@ As it is difficult to know if Your data contain such blocks, the best You can do
 2. Using `*` or `.` wildcards with adding files does not add directories or just do nothing
 
 Yup, it's quite uncomfortable, I think. You have to add directories manually. I think it's due to make path traversal attacks harder or even impossible.
-Creating some script making list of files would be great alternative. As far as I know, it is possible to provide as many file as You want in command prompt.
+Combining this with some script making list of files You wish to add to the archive would be great solution. As far as I know, it is possible to provide as many file as You want in command prompt.
 If I'm not right, You may also add files partially to make full archive.
 
 ## Disclaimer
