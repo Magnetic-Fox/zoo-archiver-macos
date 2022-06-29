@@ -39,7 +39,7 @@ char *fname;
    char *namep;                   /* points to relevant part of tempname */
 
    char *p;
-   strncpy (tempname, fname, LFNAMESIZE);
+   strcpy (tempname, fname);
 
 #ifdef DEBUG
 printf ("parse:  supplied name is [%s].\n", tempname);
