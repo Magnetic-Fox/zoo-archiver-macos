@@ -27,7 +27,7 @@ However, I encountered problems under my Windows installation using MinGW. It mi
 In `zoo-2.10` directory. Other directories contain original archives, descriptions and Debian-specific files with patches.
 
 ## I use Linux or want to test this code under Windows, but can't see those targets. What to do?
-As I made really simple updates to Makefile, using `mac` or `mac64` target should work correct. At least under Linux, as I've mentioned before.
+As I made really simple updates to Makefile, using `mac` or `mac64` target should work fine. At least under Linux, as I've mentioned before.
 I have not been able to test it properly under Windows, so I'd be happy to see Your tests and talk about them, if time permits.
 
 However,
