@@ -46,7 +46,7 @@ As it is difficult to know if Your data contain such blocks, the best You can do
 - You may do this easily by just testing the archive's integrity: `zoo -test archive.zoo`
 - Or just by extracting the files from it: `zoo x archive.zoo`; remember to do this in a different directory than your files
 
-2. Using `*` or '.' wildcards with adding files does not add directories or just do nothing
+2. Using `*` or `.` wildcards with adding files does not add directories or just do nothing
 
 Yup, it's quite uncomfortable, I think. You have to add directories manually. I think it's due to make path traversal attacks harder or even impossible.
 Creating some script making list of files would be great alternative. As far as I know, it is possible to provide as many file as You want in command prompt.
