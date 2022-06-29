@@ -39,18 +39,18 @@ It is far better to use officially supported versions rather than using codes pr
 ## Known problems (to me)
 1. `Stack overflow in lzd()` on some data
 
-   Well, first of all, You have to know that this software is somehow old now. It was developed while much smaller amount of data were ever needed and typical storage media had far less than 1MB of space.
-   You can't expect reliability while using huge files. However, it's possible to use this software even with gigabyte files as long as they do not contain similar blocks of data which may result in creating block on stack with size greater than 8MB (as far, as I've been able to notice it).
-   As it is difficult to know if Your data contain such blocks, the best You can do, if You really need or want to use this software with big files, is to test any archive created using `zoo` - PLEASE DO THIS IN THAT CASE, BECAUSE OTHERWISE YOU MAY LOSS YOUR DATA!
+Well, first of all, You have to know that this software is somehow old now. It was developed while much smaller amount of data were ever needed and typical storage media had far less than 1MB of space.
+You can't expect reliability while using huge files. However, it's possible to use this software even with gigabyte files as long as they do not contain similar blocks of data which may result in creating block on stack with size greater than 8MB (as far, as I've been able to notice it).
+As it is difficult to know if Your data contain such blocks, the best You can do, if You really need or want to use this software with big files, is to test any archive created using `zoo` - PLEASE DO THIS IN THAT CASE, BECAUSE OTHERWISE YOU MAY LOSS YOUR DATA!
 
-   - You may do this easily by just testing the archive's integrity: `zoo -test archive.zoo`
-   - Or just by extracting the files from it: `zoo x archive.zoo`; remember to do this in a different directory than your files
+- You may do this easily by just testing the archive's integrity: `zoo -test archive.zoo`
+- Or just by extracting the files from it: `zoo x archive.zoo`; remember to do this in a different directory than your files
 
 2. Using `*` or '.' wildcards with adding files does not add directories or just do nothing
 
-   Yup, it's quite uncomfortable, I think. You have to add directories manually. I think it's due to make path traversal attacks harder or even impossible.
-   Creating some script making list of files would be great alternative. As far as I know, it is possible to provide as many file as You want in command prompt.
-   If I'm not right, You may also add files partially to make full archive.
+Yup, it's quite uncomfortable, I think. You have to add directories manually. I think it's due to make path traversal attacks harder or even impossible.
+Creating some script making list of files would be great alternative. As far as I know, it is possible to provide as many file as You want in command prompt.
+If I'm not right, You may also add files partially to make full archive.
 
 ## Disclaimer
 I did my best to test these codes and provide usable software without errors with hope it will be useful for somebody (for example, for historical or sentimental reasons).
