@@ -2,5 +2,5 @@
 *.o
 
 # Ignore compiled software
-zoo-2.10.orig/zoo
-zoo-2.10.orig/fiz
+zoo-2.10/zoo
+zoo-2.10/fiz
